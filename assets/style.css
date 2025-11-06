@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'DIN Next Rounded LT W01 Regular';
+    src: url('fonts/DIN\ Next\ Rounded\ LT\ W01\ Regular.woff') format('woff'),
+    url('fonts/DIN\ Next\ Rounded\ LT\ W01\ Regular.woff2') format('woff2'),
+    url('fonts/DIN\ Next\ Rounded\ LT\ W01\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CCWildWordsLower Regular';
+    src: url('fonts/CCWildWordsLower\ Regular.woff') format('woff'),
+    url('fonts/CCWildWordsLower\ Regular.woff2') format('woff2'),
+    url('fonts/CCWildWordsLower\ Regular.ttf') format('truetype');
+}
+
+.my-font {
+    font-family: 'DIN Next Rounded LT W01 Regular', Arial, Helvetica, sans-serif;
+}
+
+.comic-font {
+    font-family: 'CCWildWordsLower Regular', Arial, Helvetica, sans-serif;
+}
+
+.comic-font#subheading {
+    font-size: medium;
+}
+
+.text-center {
+    padding: 5px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.on-left {
+    width: 60vw; /* 80vw */
+    margin-left: 5vw;
+}
+
+.on-left#explainer { padding: 1rem; }
+
+.more-on-left {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 769px) {
+.more-on-left {
+    width: 60vw;
+    margin-left: 10vw;
+    object-fit: contain;
+}
+}
+
+.better-para p {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.more-some-space {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.some-space {
+    margin-top: 40px;
+    margin: 25px;
+}
+
+.big-text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.small-text { font-size: small; }
+
+.footer-text {
+    margin-top: 18vh;
+    font-weight: bold;
+}
+
+.underline-green {
+    text-decoration: underline;
+    text-decoration-thickness: 4px ;
+    text-decoration-color: #4aff80;
+}
+
+.underline-red {
+    text-decoration: underline;
+    text-decoration-thickness: 4px ;
+    text-decoration-color: #ff4545;
+}
+
+.no-underline a { 
+    text-decoration: none; 
+}
+
+.black { color: black; }
+
+.grey { color:  rgb(195, 195, 195); } 
+
+.yellow { color: gold; }
+
+.red { color: #ff4545 }
+
+.link { color: #1eb6fc; }
+
+.nav-link {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.nav-link a {
+    font-size: large;
+    color:   rgb(195, 195, 195) ;
+    transition: color 0.3s;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.nav-link.active,
+.nav-link a:hover {
+     color: rgb(114, 114, 114) ;
+}
+
+.button {
+  padding: 15px 24px; /*10px 16px; */ 
+  font-size: large; /* 15 px */
+  border-radius: 16px; /* 10px */
+  border: 3px solid;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.button#blackBtn {
+    border-color: rgb(22, 22, 22); /* #00aeff; */
+    background-color: rgb(44, 44, 44);
+    color: whitesmoke;
+}
+
+.button#blackBtn:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.button#linkButton {
+    border-color: rgb(195, 195, 195); /* #00aeff; */
+    background-color: rgb(251, 251, 251);
+}
+
+.button#reportBtn:hover,
+.button#linkButton:hover {
+    background-color: whitesmoke;
+}
+
+.button#reportBtn {
+    border-color: #ff4545;
+    background-color: rgb(255, 255, 255);
+}
+
+#my-body {
+    font-size: x-large;
+}  
+
+input[type="email"] {
+    padding: 15px 24px; 
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: rgb(195, 195, 195);
+    border-radius: 16px; 
+    width: 30vw; 
+    font-size: large;
+    transition: all 0.3s ease;
+}
+
+
+.submit-button {
+  padding: 13px 22px; /*10px 16px; */ 
+  font-size: large; /* 15 px */
+  border-radius: 16px; /* 10px */
+  border: 3px solid;
+  border-color: goldenrod; /* #00aeff; */
+  background-color: gold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.submit-button:hover {
+    background-color: rgb(240, 204, 0);
+}
+
+img {
+    max-width: 400px;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+figure {
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.carousel {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    animation: spin 15s infinite linear;
+    padding-right: 5vw;
+}
+
+.card {
+    flex: 0 0 5vw;
+    height: 10vh;
+    width: 10vw;
+    opacity: 0.7;
+    object-fit: contain;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.container {
+    margin: auto;
+    width: 50vw;
+}
