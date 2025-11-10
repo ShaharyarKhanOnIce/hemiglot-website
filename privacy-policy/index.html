@@ -8,7 +8,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hemiglot: Privacy Policy</title>
-    <link rel="icon" type="image/x-icon" href="../assets/hemiglot_32px_logo.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/hemiglot_16px_logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/hemiglot_32px_logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/hemiglot_48px_logo.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/hemiglot_128px_logo.png">
+
+    <link rel="icon" type="image/x-icon" href="../assets/hemiglot_32px_logo.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/hemiglot_16px_logo.ico">
 
     <meta name="description" content="Hemiglot.com and Hemiglot Browser Extension Privacy Policy">
     <meta name="keywords" content="Chrome extension, browser extension, free extension, Duolingo words, Duolingo words list">
@@ -51,14 +58,13 @@
                     or store information on any remote server.</p>
                     <h3>Permissions</h3>
                     <p>The browser extension requests the following permissions solely to provide its core functionality.</p>
-                    <h4>Host</h4>
-                    <p>The extension requests access to https://www.duolingo.com/* solely to detect when the user is on Duolingo’s 
-                        website and specifically on the “Words” tab. This permission is required for the extension to scrape learned words 
-                        from that page when the user chooses to export them. No other sites are accessed, and no data is stored, shared, or 
-                        transmitted anywhere — all processing occurs locally on the user’s device.</p>
                     <h4>activeTab</h4>
                     <p>Used only to identify when the user is currently viewing the target page / url. 
                         It enables the extension to run its script on that active page when prompted by the user.</p>
+                    <h4>scripting</h4>
+                    <p>Used to inject and execute a simple script on the target page / 
+                        url to read visible data when prompted by the user. 
+                        The script runs locally and does not transmit any data to any external service.</p>
                     <h4>downloads</h4>
                     <p>Used only when prompted by the user, to save the data read as a .txt file on 
                         the user's device. The file is created and downloaded locally.
@@ -74,6 +80,5 @@
     <footer class="text-center small-text footer-text">Made with love by <span><a class="black" href="https://medium.com/@theshaharyarkhan">Shaharyar Khan</a></span><br>© 2025 Hemiglot, All Rights Reserved</footer>
 
 </body>
-
 
 </html>
